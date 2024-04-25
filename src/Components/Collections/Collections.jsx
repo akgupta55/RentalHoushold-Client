@@ -17,7 +17,7 @@ const Try = () => {
   const getAllProducts = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/product/get-product"
+        "https://rentalhousehold-server.onrender.com/api/v1/product/get-product"
       );
       setProducts(data.products);
     } catch (error) {
@@ -82,7 +82,7 @@ const Try = () => {
           {products?.map((p) => (
             <div key={p._id} className="card m-3" style={{ width: "15rem" }}>
               <img
-                src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                src={`https://rentalhousehold-server.onrender.com/api/v1/product/product-photo/${p._id}`}
                 className="card-img-top"
                 alt={p.name}
               />

@@ -12,7 +12,7 @@ const Users = () => {
   const getAllUsers = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/auth/all-users"
+        "https://rentalhousehold-server.onrender.com/api/v1/auth/all-users"
       );
       setAllUsers(data.allUsers);
     } catch (error) {

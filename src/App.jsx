@@ -17,7 +17,6 @@ import Profile from "./Pages/User/Profile";
 import Dashboard from "./Pages/User/Dashboard";
 import Products from "./Pages/Admin/Products";
 import UpdateProduct from "./Pages/Admin/UpdateProduct";
-import Try from "./Components/Try/Try";
 import SearchResult from "./Pages/SearchResult/SearchResult";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import CategoryProduct from "./Pages/CategoryProduct/CategoryProduct";
@@ -34,7 +33,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product/:slug" element={<ProductDetails />} />
         <Route path="/category/:slug" element={<CategoryProduct />} />
-        <Route path="/try" element={<Try />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/search" element={<SearchResult />} />
         <Route path="/register" element={<Registration />} />

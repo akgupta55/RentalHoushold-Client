@@ -31,7 +31,7 @@ const SearchResult = () => {
             {values?.results.map((p) => (
               <div key={p._id} className="card m-3" style={{ width: "15rem" }}>
                 <img
-                  src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                  src={`https://rentalhousehold-server.onrender.com/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                 />

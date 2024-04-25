@@ -19,7 +19,7 @@ const CategoryProduct = () => {
   const getPrductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/product-category/${params.slug}`
+        `https://rentalhousehold-server.onrender.com/api/v1/product/product-category/${params.slug}`
       );
       setProducts(data?.products);
       setCategory(data?.category);
@@ -43,7 +43,7 @@ const CategoryProduct = () => {
                   style={{ width: "15rem" }}
                 >
                   <img
-                    src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                    src={`https://rentalhousehold-server.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                   />
