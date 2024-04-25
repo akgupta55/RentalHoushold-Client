@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========contact us ========= */
+.contactus {
+  /* margin: 0; */
+  padding-top: 80px;
+  /* height: 70vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactus img {
+  margin: 10px;
+}

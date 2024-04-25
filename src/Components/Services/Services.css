@@ -1,0 +1,55 @@
+.services {
+  position: relative;
+  margin-block: 140px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.services h1 {
+  position: absolute;
+  top: -70px;
+  left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Libre Baskerville", serif;
+}
+.services h1::first-letter {
+  font-size: 43px;
+  color: #c13247;
+}
+
+.services .crd {
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
+  height: 308px;
+  background: #fff;
+  padding: 18px 28px;
+  border: 1px solid #e2eaf0;
+  border-radius: 10px;
+  box-shadow: 0 0 0;
+  transition: all 0.2s ease-in;
+  -moz-transition: 0.2s all ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+
+card h3 {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+}
+
+.card-1 .icon {
+  height: 100px;
+  width: 50%;
+  color: #5138ee;
+}

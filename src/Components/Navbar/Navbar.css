@@ -1,0 +1,55 @@
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.search-form input {
+  border: none;
+  border-radius: 0;
+}
+.search-form button {
+  background-color: #000000;
+  border-radius: 0;
+  color: white;
+}
+
+.navbar-brand .company-logo img {
+  height: 38px;
+  width: 40px;
+  padding-right: 4px;
+}
+
+.navbar-brand .company-logo .company-name {
+  font-size: 18px;
+  font-weight: 800; /* Bold column headings */
+  color: #000;
+}
+
+.navbar-brand .company-logo .company-name .subName {
+  font-size: 18px;
+  font-weight: 300;
+  color: #f26464;
+}

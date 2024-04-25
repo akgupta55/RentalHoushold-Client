@@ -1,0 +1,25 @@
+.cart-page {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.cart-page .heading {
+  margin-bottom: 10px;
+  width: 103%;
+  padding: 15px !important;
+  font-family: "roboto", sans-serif;
+  font-weight: normal;
+  background-color: rgba(0, 0, 255, 0.072) !important;
+}
+.cart-page .cart-details {
+  border: 1px solid rgb(57, 56, 56);
+  border-radius: 6px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.cart-page .cart-details img {
+  border: 1px solid rgb(103, 62, 62);
+  width: 100%;
+  height: 100%;
+}

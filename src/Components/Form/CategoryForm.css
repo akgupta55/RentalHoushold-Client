@@ -1,0 +1,14 @@
+.btn-size {
+  width: 150%;
+}
+.btn-inp {
+  outline: none !important;
+}
+
+.btn-d {
+  border: 1px solid white !important;
+  width: 80px;
+}
+.btn-d:hover {
+  background-color: none !important;
+}

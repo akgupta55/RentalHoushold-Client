@@ -1,0 +1,17 @@
+.prevArrow {
+  position: absolute;
+  right: 130px;
+  top: -54px;
+}
+
+.prevArrow .btn {
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 400;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #f79797;
+  cursor: pointer;
+}

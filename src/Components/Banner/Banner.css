@@ -1,0 +1,8 @@
+.banner .slick-slide img {
+  /* margin-left: 30px; */
+  display: flex;
+  width: 100%;
+  height: 280px;
+  margin-top: 100px;
+  /* margin: 30px 30px; */
+}

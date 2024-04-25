@@ -1,0 +1,62 @@
+.collections {
+  width: 100%;
+  /* padding-left: 80px; */
+}
+
+.collections {
+  flex-wrap: wrap;
+  margin-top: 80px !important;
+}
+.collections .card {
+  background-color: rgba(128, 128, 128, 0.097);
+  margin-left: 21px;
+  margin-top: 20px;
+}
+.collections .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collections .card-price {
+  color: green;
+  font-weight: bold;
+}
+.collections button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.collections .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.collections .card img:hover {
+  transform: scale(0.9);
+}
+
+.collections .card-img-top {
+  height: 300px !important;
+}
+
+.collections .slick-track {
+  width: 100%;
+}
+
+.collections .slick-slide > div {
+  padding-left: 30px;
+  width: 320px;
+  margin: 30px 30px;
+}
+
+.collections .slick-slide > div:nth-child(1) {
+  margin-left: 0;
+}
+
+.collections .slick-list {
+  margin-right: -30px;
+}

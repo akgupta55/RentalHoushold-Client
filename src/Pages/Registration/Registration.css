@@ -1,0 +1,82 @@
+.main1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 620px;
+  /* margin-block: 90px; */
+}
+
+.cn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.box {
+  margin-block: 6px;
+}
+
+label {
+  text-transform: capitalize;
+  font-weight: 400px;
+  font-size: 20px;
+}
+
+input {
+  cursor: pointer;
+  width: 240px;
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  text-transform: uppercase;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 60px;
+  height: 31px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 10px;
+  background: yellow;
+  width: 20vw;
+  height: 8vh;
+  border-radius: 20vh;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
