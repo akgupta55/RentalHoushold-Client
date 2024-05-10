@@ -1,10 +1,6 @@
-.ctg-prd {
-  padding-top: 95px;
-}
-/* http://localhost:8080 */
 .category {
   flex-wrap: wrap;
-  margin-top: 80px !important;
+  padding-top: 70px !important;
 }
 .category .card {
   background-color: rgba(128, 128, 128, 0.097);

@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Collections.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import NextArrow from "../NextArrow/NextArrow";
-import PrevArrow from "../PrevArrow/PrevArrow";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../Context/cart";
 import toast from "react-hot-toast";
@@ -28,59 +23,16 @@ const Try = () => {
     getAllProducts();
   }, []);
 
-  const settings = {
-    arrows: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          // initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          // initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   const navigate = useNavigate();
   const [cart, setCart] = useCart();
 
   return (
     <div className="collections">
       <h1>Our Tranding Collections</h1>
-      <div className="card">
-        <Slider {...settings}>
-          {products?.map((p) => (
-            <div key={p._id} className="card m-3" style={{ width: "15rem" }}>
+      <div className="cards">
+        {products?.map((p, idx) =>
+          idx === 10 || idx === 6 || idx === 4 || idx === 8 ? (
+            <div key={p._id} className="card m-3" style={{ width: "16rem" }}>
               <img
                 src={`https://rentalhousehold-server.onrender.com/api/v1/product/product-photo/${p._id}`}
                 className="card-img-top"
@@ -135,8 +87,10 @@ const Try = () => {
                 </div>
               </div>
             </div>
-          ))}
-        </Slider>
+          ) : (
+            <></>
+          )
+        )}
       </div>
     </div>
   );

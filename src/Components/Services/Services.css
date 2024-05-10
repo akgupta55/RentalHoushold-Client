@@ -1,19 +1,14 @@
 .services {
-  position: relative;
   margin-block: 140px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-.services h1 {
-  position: absolute;
-  top: -70px;
-  left: 20px;
-  font-size: 25px;
-  font-weight: 700;
-  font-family: "Libre Baskerville", serif;
-}
+
 .services h1::first-letter {
   font-size: 43px;
   color: #c13247;

@@ -1,12 +1,18 @@
+.row-all {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .cart-page {
-  padding-top: 70px;
+  padding-top: 68px;
   padding-bottom: 30px;
 }
 
 .cart-page .heading {
   margin-bottom: 10px;
-  width: 103%;
-  padding: 15px !important;
+  width: 100%;
+  /* padding: 15px !important; */
   font-family: "roboto", sans-serif;
   font-weight: normal;
   background-color: rgba(0, 0, 255, 0.072) !important;

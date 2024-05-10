@@ -6,3 +6,8 @@
   text-decoration: none !important;
   color: black !important;
 }
+.row-all {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

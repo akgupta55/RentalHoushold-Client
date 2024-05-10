@@ -1,26 +1,49 @@
-import Slider from "react-slick";
-import banner1 from "../assets/banner1.png";
-import banner2 from "../assets/banner2.png";
+import { useState } from "react";
+import data from "../assets/banner";
 import "./Banner.css";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 function Banner() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+  const [slide, setSlide] = useState(0);
+
+  const nextSlide = () => {
+    setSlide(slide === data.length - 1 ? 0 : slide + 1);
   };
+
+  const prevSlide = () => {
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+  };
+
   return (
-    <div className="banner">
-      <Slider {...settings}>
-        <div>
-          <img src={banner1} className="images" />
-        </div>
-        <div>
-          <img src={banner2} className="images" />
-        </div>
-      </Slider>
+    <div className="carousel">
+      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+      {data.map((item, idx) => {
+        return (
+          <img
+            src={item.img}
+            alt={item.alt}
+            key={idx}
+            className={slide === idx ? "slide" : "slide slide-hidden"}
+          />
+        );
+      })}
+      <BsArrowRightCircleFill
+        onClick={nextSlide}
+        className="arrow arrow-right"
+      />
+      <span className="indicators">
+        {data.map((_, idx) => {
+          return (
+            <button
+              key={idx}
+              className={
+                slide === idx ? "indicator indicator-inactive" : "indicator"
+              }
+              onClick={() => setSlide(idx)}
+            ></button>
+          );
+        })}
+      </span>
     </div>
   );
 }

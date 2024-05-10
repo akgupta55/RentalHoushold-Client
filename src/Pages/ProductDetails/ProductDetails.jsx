@@ -3,7 +3,7 @@ import "./ProductDetails.css";
 import { useState, useEffect } from "react";
 
 import axios from "axios";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { useCart } from "../../Context/cart";
 import toast from "react-hot-toast";
 
@@ -43,49 +43,70 @@ const ProductDetails = () => {
   };
   return (
     <Layout>
-      <div className="row product-details">
-        <div className="col">
-          <img
-            src={`https://rentalhousehold-server.onrender.com/api/v1/product/product-photo/${product._id}`}
-            className="card-img-top"
-            alt={product.name}
-          />
-        </div>
-        <div className="col-md-6 product-details-info">
-          <h1 className="text-center datails">Product Details</h1>
-          <h6>
-            <span className="datails">Name</span> : {product.name}
-          </h6>
-          <h6>
-            <span className="datails">Description</span> : {product.description}
-          </h6>
-          <h6>
-            <span className="datails">Price</span> :{" "}
-            {product?.price?.toLocaleString("en-US", {
-              style: "currency",
-              currency: "INR",
-            })}
-            /m
-          </h6>
-          <h6>
-            <span className="datails">Category</span> :{" "}
-            {product?.category?.name}
-          </h6>
-          <button
-            className="btn btn-secondary ms-1"
-            onClick={() => {
-              setCart([...cart, product]);
-              localStorage.setItem("cart", JSON.stringify([...cart, product]));
-              toast.success("Item Added to cart");
-            }}
-            style={{
-              width: "8rem",
-              height: "4rem",
-              marginLeft: "2px",
-            }}
-          >
-            ADD TO CART
-          </button>
+      <div className="row-all product-details">
+        <nav aria-label="breadcrumb" className="path">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="breadcrumb-item">
+              <Link to={`/category/${product?.category?.name}`}>
+                {product?.category?.name}
+              </Link>
+            </li>
+            <li className="breadcrumb-item" aria-current="page">
+              {product.name}
+            </li>
+          </ol>
+        </nav>
+        <div className="row-prdet">
+          <div className="col">
+            <img
+              src={`https://rentalhousehold-server.onrender.com/api/v1/product/product-photo/${product._id}`}
+              className="card-img-top"
+              alt={product.name}
+            />
+          </div>
+          <div className="col product-details-info">
+            <h1 className="text-center datails">Product Details</h1>
+            <h6>
+              <span className="datails">Name</span> : {product.name}
+            </h6>
+            <h6>
+              <span className="datails">Description</span> :{" "}
+              {product.description}
+            </h6>
+            <h6>
+              <span className="datails">Price</span> :{" "}
+              {product?.price?.toLocaleString("en-US", {
+                style: "currency",
+                currency: "INR",
+              })}
+              /m
+            </h6>
+            <h6>
+              <span className="datails">Category</span> :{" "}
+              {product?.category?.name}
+            </h6>
+            <button
+              className="btn btn-secondary ms-1"
+              onClick={() => {
+                setCart([...cart, product]);
+                localStorage.setItem(
+                  "cart",
+                  JSON.stringify([...cart, product])
+                );
+                toast.success("Item Added to cart");
+              }}
+              style={{
+                width: "8rem",
+                height: "4rem",
+                marginLeft: "2px",
+              }}
+            >
+              ADD TO CART
+            </button>
+          </div>
         </div>
       </div>
       <hr />

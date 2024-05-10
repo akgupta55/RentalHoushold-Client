@@ -84,7 +84,7 @@ const CartPage = () => {
   return (
     <Layout>
       <div className="cart-page">
-        <div className="row heading">
+        <div className="heading">
           <div className="col ">
             <h1 className="text-center">
               {`Hello ${auth?.token && auth?.user?.name}`}
@@ -98,8 +98,8 @@ const CartPage = () => {
             </h4>
           </div>
         </div>
-        <div className="row">
-          <div className="col ">
+        <div className="row-all">
+          <div className="col-md-7 ">
             {cart?.map((p) => (
               <div className="row cart-details flex-row" key={p._id}>
                 <div className="col-md-4">

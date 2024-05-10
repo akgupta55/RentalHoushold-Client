@@ -27,11 +27,11 @@ const Orders = () => {
   return (
     <Layout>
       <div className="container-flui  dashboard">
-        <div className="row">
+        <div className="row-all">
           <div className="col-md-3">
             <UserMenu />
           </div>
-          <div className="col-md-9">
+          <div className="col-md-8">
             <h1 className="text-center">All Orders</h1>
             {orders?.map((o, i) => {
               return (

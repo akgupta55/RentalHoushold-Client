@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Layout from "../../Components/Layout/Layout";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -34,6 +34,16 @@ const CategoryProduct = () => {
         <h4 className="text-center">Category - {category?.name}</h4>
         <h6 className="text-center">{products?.length} result found </h6>
         <div className="row">
+          <nav aria-label="breadcrumb">
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="breadcrumb-item" aria-current="page">
+                {category?.name}
+              </li>
+            </ol>
+          </nav>
           <div className="col offset-1">
             <div className="d-flex flex-wrap cat">
               {products?.map((p) => (
@@ -45,6 +55,7 @@ const CategoryProduct = () => {
                   <img
                     src={`https://rentalhousehold-server.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
+                    style={{ height: "2rem !important" }}
                     alt={p.name}
                   />
                   <div className="card-body">
@@ -60,9 +71,9 @@ const CategoryProduct = () => {
                         /m
                       </h5>
                     </div>
-                    <p className="card-text ">
+                    {/* <p className="card-text ">
                       {p.description.substring(0, 60)}...
-                    </p>
+                    </p> */}
                     <div className="card-name-price">
                       <button
                         className="btn btn-info "

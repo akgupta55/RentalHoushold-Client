@@ -22,7 +22,7 @@ import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import CategoryProduct from "./Pages/CategoryProduct/CategoryProduct";
 import CartPage from "./Pages/CartPages/CartPages";
 import AdminOrders from "./Pages/Admin/AdminOrders";
-import About from "./Pages/About";
+import About from "./Pages/About.jsX";
 import Contact from "./Pages/Contact";
 import Policy from "./Pages/Policy";
 

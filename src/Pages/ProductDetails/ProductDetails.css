@@ -1,3 +1,16 @@
+.row-all {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-prdet {
+  display: flex;
+}
+
+.path {
+  padding: 5px;
+}
+
 .product-details {
   padding-top: 90px;
 }

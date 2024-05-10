@@ -6,6 +6,7 @@
   box-shadow: 0 8px 6px -6px gray;
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: solid gray !important;
+  background: #d8f264;
 }
 
 .nav-link {
@@ -23,7 +24,7 @@
 }
 
 .search-form {
-  margin-right: 10px;
+  margin-right: 30px;
   margin-top: 4px;
 }
 .search-form input {

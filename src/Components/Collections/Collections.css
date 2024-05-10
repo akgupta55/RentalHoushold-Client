@@ -1,17 +1,15 @@
 .collections {
-  width: 100%;
-  /* padding-left: 80px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.collections {
+.collections .cards {
+  display: flex;
   flex-wrap: wrap;
-  margin-top: 80px !important;
 }
-.collections .card {
-  background-color: rgba(128, 128, 128, 0.097);
-  margin-left: 21px;
-  margin-top: 20px;
-}
+
 .collections .card-name-price {
   display: flex;
   flex-direction: row;
@@ -41,22 +39,4 @@
 
 .collections .card-img-top {
   height: 300px !important;
-}
-
-.collections .slick-track {
-  width: 100%;
-}
-
-.collections .slick-slide > div {
-  padding-left: 30px;
-  width: 320px;
-  margin: 30px 30px;
-}
-
-.collections .slick-slide > div:nth-child(1) {
-  margin-left: 0;
-}
-
-.collections .slick-list {
-  margin-right: -30px;
 }

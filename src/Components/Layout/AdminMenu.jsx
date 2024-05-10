@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 const AdminMenu = () => {
   return (
     <>
-      <div className="text-center">
+      <div className="text-center p-2">
         <div className="list-group">
           <h4>Admin Panel</h4>
           <NavLink
