@@ -1,6 +1,6 @@
-.row-all {
+.row-all-p {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .row-prdet {
@@ -50,7 +50,7 @@
 }
 
 .similar-products .card-price {
-  color: green;
+  color: green !important;
   font-weight: bold;
 }
 .similar-products button {

@@ -5,14 +5,13 @@
 }
 
 .cart-page {
-  padding-top: 68px;
+  padding-top: 80px;
   padding-bottom: 30px;
 }
 
 .cart-page .heading {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
   width: 100%;
-  /* padding: 15px !important; */
   font-family: "roboto", sans-serif;
   font-weight: normal;
   background-color: rgba(0, 0, 255, 0.072) !important;

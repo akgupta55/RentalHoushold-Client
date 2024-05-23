@@ -37,7 +37,7 @@ function Banner() {
             <button
               key={idx}
               className={
-                slide === idx ? "indicator indicator-inactive" : "indicator"
+                slide === idx ? "indicator" : "indicator indicator-inactive"
               }
               onClick={() => setSlide(idx)}
             ></button>

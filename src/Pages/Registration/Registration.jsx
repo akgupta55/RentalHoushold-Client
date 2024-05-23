@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import Layout from "../../Components/Layout/Layout";
+import img from "../../Components/assets/image.webp";
 
 const Registration = () => {
   const [name, setName] = useState("");
@@ -48,8 +49,11 @@ const Registration = () => {
   };
 
   return (
-    <Layout className="main1">
+    <Layout>
       <form className="main" onSubmit={handleSubmit}>
+        <div className="left-side">
+          <img src={img} className="img-fluid" alt="Sample image" />
+        </div>
         <div className="cn">
           <h1>CREATE AN ACCOUNT</h1>
           <div className="box">
@@ -123,8 +127,8 @@ const Registration = () => {
             />
           </div>
 
-          <button type="submit" className="button">
-            Submit
+          <button type="submit" className="btn btn-primary btn-lg">
+            Register
           </button>
         </div>
       </form>

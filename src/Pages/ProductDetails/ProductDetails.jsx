@@ -43,7 +43,7 @@ const ProductDetails = () => {
   };
   return (
     <Layout>
-      <div className="row-all product-details">
+      <div className="row-all-p product-details">
         <nav aria-label="breadcrumb" className="path">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">

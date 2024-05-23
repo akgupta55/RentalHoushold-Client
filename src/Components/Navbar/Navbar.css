@@ -6,16 +6,18 @@
   box-shadow: 0 8px 6px -6px gray;
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: solid gray !important;
-  background: #d8f264;
+  background: #141a46;
+  color: white;
 }
 
 .nav-link {
   font-weight: 300 !important;
+  color: aliceblue !important;
 }
 
-.active {
-  border-bottom: 2px solid black;
-}
+/* .active {
+  color: aliceblue !important;
+} */
 
 .navbar-brand {
   font-weight: 700;
@@ -38,19 +40,32 @@
 }
 
 .navbar-brand .company-logo img {
-  height: 38px;
-  width: 40px;
-  padding-right: 4px;
+  height: 48px;
+  width: 60px;
+  /* padding-right: 2px; */
 }
 
 .navbar-brand .company-logo .company-name {
   font-size: 18px;
   font-weight: 800; /* Bold column headings */
-  color: #000;
+  color: rgb(227, 227, 103);
+  font-family: cursive;
 }
 
 .navbar-brand .company-logo .company-name .subName {
   font-size: 18px;
   font-weight: 300;
   color: #f26464;
+  font-family: cursive;
+}
+.nav-txt-clr {
+  color: white !important;
+}
+
+.nav-txt-clr :hover {
+  color: white !important;
+}
+
+.txt-clr :hover {
+  background-color: rgb(112, 163, 244) !important;
 }

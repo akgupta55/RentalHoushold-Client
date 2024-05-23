@@ -9,8 +9,8 @@ const Loading = () => {
         <h2 className="pnf-heading">
           You are on unauthorised 💀 page please🙏🏻 go back !!! 🚀
         </h2>
-        <Link to="/" className="pnf-btn">
-          Go Back
+        <Link to="/login" className="pnf-btn">
+          Go To Login
         </Link>
       </div>
     </Layout>

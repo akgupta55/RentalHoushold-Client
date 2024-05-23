@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import Layout from "../../Components/Layout/Layout";
 import { useAuth } from "../../Context/Auth";
+import img from "../../Components/assets/image.webp";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -53,8 +54,11 @@ const Login = () => {
   };
 
   return (
-    <Layout className="main1">
+    <Layout>
       <form className="main" onSubmit={handleSubmit}>
+        <div className="left-side gradient-custom-2">
+          <img src={img} className="img-fluid" alt="Sample image" />
+        </div>
         <div className="cn">
           <h1>LOGIN YOUR ACCOUNT</h1>
 
@@ -82,22 +86,15 @@ const Login = () => {
             />
           </div>
 
-          <button type="submit" className="button">
-            Submit
+          <button type="submit" className="btn btn-primary btn-lg">
+            Login
           </button>
+          <br />
+          <br />
           <div className="box">
-            <button
-              type="button"
-              className="button"
-              onClick={() => {
-                navigate("/forgot-password");
-              }}
-            >
-              Forgot Password
-            </button>
+            <Link to="/forgot-password">Forgot Password?</Link>
           </div>
-          <br />
-          <br />
+
           <div className="notice">
             If you have not an account{" "}
             <span>

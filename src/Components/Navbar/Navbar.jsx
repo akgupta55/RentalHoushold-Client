@@ -55,17 +55,17 @@ function Navbar() {
               <SearchInput />
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle nav-item"
                   to={"/categories"}
                   data-bs-toggle="dropdown"
                 >
                   Categories
                 </Link>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu txt-clr ">
                   {categories?.map((c) => (
-                    <li key={c._id}>
+                    <li key={c._id} className="txt-clr">
                       <Link
-                        className="dropdown-item"
+                        className="dropdown-item "
                         to={`/category/${c.slug}`}
                         onClick={handleClick}
                       >
@@ -100,7 +100,7 @@ function Navbar() {
                     >
                       {auth?.user?.name}
                     </NavLink>
-                    <ul className="dropdown-menu">
+                    <ul className="dropdown-menu txt-clr">
                       <li>
                         <NavLink
                           to={`/dashboard/${
@@ -126,12 +126,12 @@ function Navbar() {
                 </>
               )}
 
-              <li className="nav-item">
+              <li className="nav-item ">
                 {auth?.user?.role === 1 ? (
                   <>
                     <div
                       to="/cart"
-                      className="nav-link text-decoration-line-through"
+                      className="nav-link text-decoration-line-through "
                       onClick={handleClick}
                     >
                       Cart
@@ -141,10 +141,15 @@ function Navbar() {
                   <>
                     <NavLink
                       to="/cart"
-                      className="nav-link"
+                      className="nav-link nav-txt-clr"
                       onClick={handleClick}
                     >
-                      <Badge count={cart?.length} showZero offset={[10, -5]}>
+                      <Badge
+                        count={cart?.length}
+                        showZero
+                        offset={[10, -5]}
+                        className="nav-txt-clr"
+                      >
                         Cart
                       </Badge>
                     </NavLink>

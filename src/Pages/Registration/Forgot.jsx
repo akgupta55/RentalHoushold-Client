@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import Layout from "../../Components/Layout/Layout";
+import img from "../../Components/assets/image.webp";
 
 const Forgot = () => {
   const [email, setEmail] = useState("");
@@ -40,8 +41,11 @@ const Forgot = () => {
   };
 
   return (
-    <Layout className="main1">
+    <Layout>
       <form className="main" onSubmit={handleSubmit}>
+        <div className="left-side gradient-custom-2">
+          <img src={img} className="img-fluid" alt="Sample image" />
+        </div>
         <div className="cn">
           <h1>RESET YOUR PASSWORD</h1>
           <div className="box">
@@ -80,7 +84,7 @@ const Forgot = () => {
             />
           </div>
 
-          <button type="submit" className="button">
+          <button type="submit" className="btn btn-primary btn-lg">
             Submit
           </button>
 
