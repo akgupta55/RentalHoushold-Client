@@ -48,7 +48,7 @@ label {
   font-size: 20px;
 }
 
-input {
+.main input {
   cursor: pointer;
   width: 240px;
   outline: none;
